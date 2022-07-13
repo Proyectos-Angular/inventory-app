@@ -1,0 +1,6 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <app-product-row class="col-lg-6 col-md-8 m-2 cursor-pointer" *ngFor="let myProduct of productList" [product]="myProduct"
+            (click)="clicked(myProduct)" [class.selected]="isSelected(myProduct)"></app-product-row>
+    </div>
+</div>

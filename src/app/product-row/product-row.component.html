@@ -1,0 +1,15 @@
+<div class="product-row">
+    <div class="product-row">
+        <app-product-img [product]="product"></app-product-img>
+        <div class="product-detail">
+            <div> {{product.name}} </div>
+            <div>
+                <p> SKU #{{ product.sku }} </p>
+            </div>
+            <div>
+                <app-product-department [product]="product"></app-product-department>
+            </div>
+        </div>
+    </div>
+    <app-price-display [price]="product.price"></app-price-display>
+</div>
